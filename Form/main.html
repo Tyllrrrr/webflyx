@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Form</title>
+</head>
+<body>
+    <h1>Buckstars</h1>
+    <form action="#" method="post">
+        <label for="coffeetype">Type of Coffee</label>
+        <br>
+        <select id="coffeetype">
+            <option value="regualr">Regular</option>
+            <option value="decaf">Decaf</option>
+            <option value="50/50">50/50</option>
+        </select>
+        <br>
+        <label for="coffeeTemp">Coffee Temperature</label>
+
+        <div id="temp">
+            <input type="radio" id="hot" name="coffeeTemp"> Hot
+            <input type="radio" id="iced" name="coffeeTemp"> Iced
+        </div>
+        <br>
+        <label for="sweetener">Sweetener</label>
+        <br>
+        <select id="sweetener">
+            <option value="sugar">Sugar</option>
+            <option value="splenda">Splenda</option>
+            <option value="equal">Equal</option>
+            <option value="sweetNlow">Sweet n' Low</option>
+            <option value="stevia">Stevia</option>
+        </select>
+        <br>
+        <label for="creamer">Creamer</label>
+        <br>
+        <select id="creamer">
+            <option value="half">Half & Half</option>
+            <option value="whole">Whole Milk</option>
+            <option value="skim">Skim Milk</option>
+            <option value="almond">Almond Milk</option>
+            <option value="oat">Oat Milk</option>
+        </select>
+        <br>
+        <label for="size">Size</label>
+        <br>
+        <input type="radio" id="small" name="size">Small
+        <input type="radio" id="medium" name="size">Medium
+        <input type="radio" id="large" name="size">Large
+        <br>
+        <label for="togo">To Go or Not</label>
+        <br>
+        <input type="radio" id="togo" name="togo">To Go
+        <input type="radio" id="instore" name="togo">In Store
+        <br>
+        <label for="firstName">First Name</label>
+        <br>
+        <input type="text" id="firstNmae" placeholder="First Name">
+        <br>
+        <label for="phone">Phone Number</label>
+        <br>
+        <input type="phone" id="phoneNumber" placeholder="Phone Number ###-###-####">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

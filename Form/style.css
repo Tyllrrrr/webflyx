@@ -1,0 +1,92 @@
+/* Hide the default radio button */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff; /* White background */
+    border: 2px solid #333;
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer;
+    position: relative;
+}
+
+/* Add a black square with padding when the radio button is checked */
+input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 11%; /* Add some padding from the top */
+    left: 10%; /* Add some padding from the left */
+    width: 80%; /* Inner black square size (50% of the outer box) */
+    height: 80%;
+    background-color: #000; /* Black square */
+}
+
+/* Border and background for the checked radio button */
+input[type="radio"]:checked {
+    background-color: #fff; /* Keep the background white for the padding */
+    border-color: #333;
+}
+
+form {
+    max-width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
+html, body {
+    margin: 1%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 0;
+}
+
+body {
+    border: 1px solid black;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center child elements horizontally */
+    padding: 20px;
+}
+
+h1, label, input, select {
+    width: 100%; /* Ensure full width for each element */
+    margin-bottom: 10px;
+    text-align: center; /* Center text inside the elements */
+    border-radius: 5px;
+}
+input[type="radio"] {
+    vertical-align: middle; /* Aligns the radio button vertically with the label */
+    margin-right: 5px; /*Adds a small space between the radio button and the label text */
+    transform: scale(0.7);
+}
+
+label {
+    display: inline-block; /* Ensures the label and radio button are in line */
+    margin-bottom: 10px; /* Optional: To maintain consistent spacing between other elements */
+    font-size: 105%;
+    font-weight: bold;
+}
+
+button {
+    width: 50%;
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-left: 28%;
+}
+
+
+
+
+
+
+
